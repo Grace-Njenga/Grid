@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tailwind Practice</title>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#CFCAD7",
+              mint: "#005B40",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- container -->
+    <section class="gallery grid grid-cols-12 grid-rows-12 bg-clifford">
+      <!-- three columns each span 3 grid-rows-6 grid-cols-12-->
+      <div class="image col-span-4 row-span-1">
+        <img src="image.jpg" alt="" />
+        <div class="contents">
+          <h1>ATTENTION TO DETAIL</h1>
+          <p>WELLNESS</p>
+        </div>
+      </div>
+
+      <div class="image col-span-4 row-span-1">
+        <img src="nice.jpg" alt="" />
+        <div class="contents">
+          <h1>ATTENTION TO DETAIL</h1>
+          <p>WELLNESS</p>
+        </div>
+      </div>
+
+      <div class="image col-span-4 row-span-1">
+        <img src="nicer.jpg" alt="" />
+        <div class="contents">
+          <h1>ATTENTION TO DETAIL</h1>
+          <p>WELLNESS</p>
+        </div>
+      </div>
+
+      <div class="image col-span-8 row-span-1">
+        <img src="niceness.jpg" alt="" />
+        <div class="contents">
+          <h1>ATTENTION TO DETAIL</h1>
+          <p>WELLNESS</p>
+        </div>
+      </div>
+
+      <div class="image col-span-4 row-span-1">
+        <div class="s">
+          <img src="image.jpg" alt="" />
+          <div class="contents">
+            <h1>ATTENTION TO DETAIL</h1>
+            <p>WELLNESS</p>
+          </div>
+        </div>
+
+        <div class="s">
+          <img src="image.jpg" alt="" />
+          <div class="contents">
+            <h1>ATTENTION TO DETAIL</h1>
+            <p>WELLNESS</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="image col-span-4 row-span-1">
+        <img src="niceness.jpg" alt="" />
+        <div class="contents">
+          <h1>ATTENTION TO DETAIL</h1>
+          <p>WELLNESS</p>
+        </div>
+      </div>
+
+      <div class="image col-span-4 row-span-1">
+        <img src="nice.jpg" alt="" />
+        <div class="contents">
+          <h1>ATTENTION TO DETAIL</h1>
+          <p>WELLNESS</p>
+        </div>
+      </div>
+
+      <div class="image col-span-4 row-span-1">
+        <img src="nicer.jpg" alt="" />
+        <div class="content">
+          <h1>ATTENTION TO DETAIL</h1>
+          <p>WELLNESS</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
