@@ -34,7 +34,7 @@ body {
 .contents p {
   color: #fafafa;
   font-weight: bold;
-  font-size: large;
+  font-size: clamp(1rem, 0.75em, 1.5rem);
 }
 .contents p {
   font-size: small;
