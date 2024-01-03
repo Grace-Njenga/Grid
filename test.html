@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(45deg , #250654 , #960080);
+            position: relative;
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            width: 350px;
+            background-color: #fff;
+            padding: 20px 30px;
+            box-shadow: 0px 4px 30px -10px rgb(0 0 0);
+        }
+        .box form .input_box{
+        width: 100%;
+        border-width: 0px 0px 2px 0px;
+        border-style: solid;
+        margin-top: 30px;
+            position: relative;
+        }
+        .box form .input_box input{
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 25px;
+            padding: 7px 0px;
+        }
+        .box form .input_box label{
+            position: absolute;
+            left: 0px;
+            font-size: 25px;
+            top: 8px;
+            pointer-events: none;
+            transition: 0.2s;
+        }
+        .box form .input_box input:focus + label,
+        .box form .input_box input:valid + label{
+            top: -15px;
+            font-size: 18px;
+            color: blue;
+        }
+        .box form .input_box{
+            width: 100%;
+            border-width: 0px 0px 2px 0px;
+            border-style: solid;
+            margin-top: 30px;
+            position: relative;
+        }
+        .box form .input_box input{
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 25px;
+            padding: 7px 0px;
+        }
+        .box form .input_box label{
+            position: absolute;
+            left: 0px;
+            font-size: 25px;
+            top: 8px;
+            pointer-events: none;
+            transition: 0.2s;
+        }
+        .box form .input_box input:focus + label,
+        .box form .input_box input:valid + label{
+            top: -15px;
+            font-size: 18px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <form action="#">
+    
+                <div class="input_box">
+                    <input type="text" required>
+                    <label>Your full names</label>
+                </div>
+
+                <div class="input_box">
+                    <input type="email" required>
+                    <label>Your email</label>
+                </div>
+                
+                <div class="input_box">
+                    <input type="tel" required>
+                    <label>Your phone number</label>
+                </div>
+
+                <div class="input_box">
+                    <input type="date" required>
+                    <label>Date</label>
+                </div>
+
+                <div class="input_box">
+                    <input type="time" required>
+                    <label>Time</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
