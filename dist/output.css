@@ -544,6 +544,93 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 976px) {
+  .container {
+    max-width: 976px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-rows-12 {
+  grid-template-rows: repeat(12, minmax(0, 1fr));
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0 4em;
+}
+
 img {
   max-width: 100%;
   width: 100%;
@@ -554,7 +641,63 @@ img {
      object-position: center;
 }
 
-body {
-  box-sizing: border-box;
-  margin: 0 4em;
+.cont{
+  height: 100%;
+  width: 100%;
+}
+
+.text{
+  color: wheat;
+  font-weight: bold;
+  font-size: large;
+  position: absolute;
+  top: 20%;
+}
+
+.overlayFade {
+  height: 20%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #0e050121;
+  transition: height 9s ease-in;
+}
+
+.cont:hover .overlayFade{
+  opacity: 1;
+}
+
+.text{
+  position: relative;
+}
+
+.text::after{
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 10%;
+  background-color: blueviolet;
+  border-radius: 3em;
+  top: -30%;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+}
+
+@media (min-width: 976px) {
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
 }
