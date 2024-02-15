@@ -1,0 +1,6 @@
+@media (max-width: 500px) and (min-width: 200px) {
+   .sub-section {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+   }
+}

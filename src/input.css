@@ -14,10 +14,14 @@ img {
   object-fit: cover;
   object-position: center;
 }
-
 .cont{
   height: 100%;
   width: 100%;
+}
+.sub-section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 .text{
   color: wheat;
